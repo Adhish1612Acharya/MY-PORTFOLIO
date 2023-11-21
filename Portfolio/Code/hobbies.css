@@ -1,0 +1,256 @@
+body{
+    background-color: #A6B37F;
+}
+
+#heading{
+    width:fit-content;
+    height: fit-content;
+    position: absolute;
+    left:46%;
+    top:6%;
+    background-color: #17E8C4;
+    padding: 0 1rem 0 1rem;
+    border-radius: 2rem;
+    animation: heading 1.4s ease-in-out 0s infinite normal;
+}
+
+@keyframes heading{
+    0%{
+        box-shadow: 0.5px 0.5px 1px black;
+    }
+    100%{
+        box-shadow: 2px 2px 10px black;
+    }
+}
+
+.hobbies-options{
+    width:20%;
+    height: 10rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.hobbies-options img{
+    width:100%;
+    border-radius:2rem ;
+}
+
+
+
+@keyframes hobbies{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.06);
+        box-shadow: 5px 5px 10px black;
+    }
+}
+
+#cricket{
+    position: absolute;
+    left:20rem;
+    top:15rem;
+    animation: hobbies 1.4s ease-in-out 1s infinite normal;
+}
+
+#badminton{
+    position: absolute;
+    top:30rem;
+    left:20rem;
+    animation: hobbies 1.4s ease-in-out 2s infinite normal;
+}
+
+#geopolitics{
+    position: absolute;
+    top:30rem;
+    left:45rem;
+    animation: hobbies 1.4s ease-in-out 2.5s infinite normal;
+}
+
+#drawing{
+    position: absolute;
+    right:4.5rem;
+    top:15rem;
+    animation: hobbies 1.4s ease-in-out 1s infinite normal;
+}
+
+#flute{
+    position: absolute;
+    top:15rem;
+    left:45rem;
+    animation: hobbies 1.4s ease-in-out 0.5s infinite normal;
+}
+
+
+@media(max-width:1200px){
+    #cricket{
+        transform: scale(0.5);
+    }
+    
+    #badminton{
+        transform: scale(0.5);
+    }
+    
+    #geopolitics{
+        transform: scale(0.5);
+    }
+    
+    #drawing{
+        transform: scale(0.5);
+    }
+    
+    #flute{
+        transform: scale(0.5);
+    }
+}
+
+.responsive-div{
+    height: 100vh;
+    width:20vw;
+    position: fixed;
+    left: -400px;
+    top:0;
+    transition: all 0.3s ease-in 0s;
+}
+
+#check{
+    display: none;
+}
+
+.hamburg-btn{
+    width: fit-content;
+    height: fit-content;
+    transform: scale(1.8);
+    position: fixed;
+    left: 3rem;
+    top:3rem;
+}
+
+.hamburg-btn i{
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.hamburg-btn i:hover{
+transform: scale(1.7);
+}
+
+.X-btn{
+  position: absolute;
+  left:85%;
+  bottom: 40%;
+}
+
+.X-btn i{
+    font-size: larger;
+    transform: scale(1.3);
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.X-btn i:hover{
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+#logo-responsive{
+    width:100%;
+    height:9%;
+    background-color: #90A05F;
+    position: absolute;
+    top:0;
+}
+
+#logo-icon{
+    width:23%;
+    height:85%;
+    padding: 0.55rem 0 0 1rem;
+}
+
+
+#logo-icon img{
+    height: 90%;
+    border-radius: 50%;;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#logo-icon img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+}
+
+#responsive-nav-link{
+    background-color: #A0905F ;
+    width:100%;
+    height: 80%;
+    position: absolute;
+    top:9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.res-sidebar{
+    height: fit-content;
+    width:fit-content;
+    background-color: rgba(128,128,128,0.2);
+    padding: 0.75rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in 0s;
+}
+
+.res-sidebar:hover{
+    background-color: rgba(128,128,128,1);
+    transform: scale(1.1);
+}
+
+.res-sidebar a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.85;
+    transition: all 0.5s ease-in-out 0s;
+    font-weight: 500;
+    font-size: large;
+}
+
+.res-sidebar a:hover{
+ font-weight:bolder;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#res-social-media{
+    width: 100%;
+    height: 11%;
+    background-color: #90A05F;
+    position: absolute;
+    top: 89%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.res-social-media-icon{
+    width:fit-content;
+    height: fit-content;
+    transform: scale(1.5);
+}
+
+.res-social-media-icon i{
+    transition: all 0.3s ease-in 0s;
+    color: black;
+    opacity: 0.7;
+}
+
+.res-social-media-icon i:hover{
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+#check:checked~.responsive-div{
+    left:0;
+}
+
+#check:checked~.hamburg-btn{
+    opacity: 0;
+}

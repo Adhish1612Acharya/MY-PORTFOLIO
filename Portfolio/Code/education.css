@@ -1,0 +1,214 @@
+body{
+    background-image: url("./Images/education image.jpg");
+}
+
+.education-details{
+    background-color: #6D56DC;
+    width:17vw;
+    height: 30vh;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out 0s ;
+    display: inline-block;
+}
+
+.education-details a{
+color: black;
+}
+
+#degree-info{
+    width:100%;
+    height:50% ;
+    transform: translateY(-1rem);
+    padding-left: 0.5rem;
+}
+
+#degree-info h3{
+    transform: translateX(3rem);
+}
+
+#degree-info p{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.education-details img{
+    width:100%;
+    height:50% ;
+    border-radius: 1rem;
+}
+
+.education-details:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px black;
+    background-color: #2b01ff;
+}
+
+#tenth{
+    position: absolute;
+    top:14%;
+    left:25%; 
+}
+
+#twelth{
+    position: absolute;
+    top:14%;
+    left:65%;
+}
+
+#engineering{
+    position: absolute;
+    top:57%;
+    left:45%;
+}
+.responsive-div{
+    height: 100vh;
+    width:20vw;
+    position: fixed;
+    left: -400px;
+    top:0;
+    transition: all 0.3s ease-in 0s;
+}
+
+#check{
+    display: none;
+}
+
+.hamburg-btn{
+    width: fit-content;
+    height: fit-content;
+    transform: scale(1.8);
+    position: fixed;
+    left: 3rem;
+    top:3rem;
+}
+
+.hamburg-btn i{
+    transition: all 0.4s ease-in-out 0s;
+    color: white;
+    transform: scale(1.5);
+}
+
+.hamburg-btn i:hover{
+transform: scale(1.9);
+}
+
+.X-btn{
+  position: absolute;
+  left:85%;
+  bottom: 40%;
+}
+
+.X-btn i{
+    font-size: larger;
+    transform: scale(1.3);
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.X-btn i:hover{
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+#logo-responsive{
+    width:100%;
+    height:9%;
+    background-color: #90A05F;
+    position: absolute;
+    top:0;
+}
+
+#logo-icon{
+    width:23%;
+    height:85%;
+    padding: 0.55rem 0 0 1rem;
+}
+
+
+#logo-icon img{
+    height: 90%;
+    border-radius: 50%;;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#logo-icon img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+}
+
+#responsive-nav-link{
+    background-color: #A0905F ;
+    width:100%;
+    height: 80%;
+    position: absolute;
+    top:9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.res-sidebar{
+    height: fit-content;
+    width:fit-content;
+    background-color: rgba(128,128,128,0.2);
+    padding: 0.75rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in 0s;
+}
+
+.res-sidebar:hover{
+    background-color: rgba(128,128,128,1);
+    transform: scale(1.1);
+}
+
+.res-sidebar a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.85;
+    transition: all 0.5s ease-in-out 0s;
+    font-weight: 500;
+    font-size: large;
+}
+
+.res-sidebar a:hover{
+ font-weight:bolder;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#res-social-media{
+    width: 100%;
+    height: 11%;
+    background-color: #90A05F;
+    position: absolute;
+    top: 89%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.res-social-media-icon{
+    width:fit-content;
+    height: fit-content;
+    transform: scale(1.5);
+}
+
+.res-social-media-icon i{
+    transition: all 0.3s ease-in 0s;
+    color: black;
+    opacity: 0.7;
+}
+
+.res-social-media-icon i:hover{
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+#check:checked~.responsive-div{
+    left:0;
+}
+
+#check:checked~.hamburg-btn{
+    opacity: 0;
+}

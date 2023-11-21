@@ -1,0 +1,406 @@
+body{
+    background-color:#A6B37F;
+}
+
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.support-div{
+    height:60vh;
+    width:100vh;
+    background-color:rgba(144,160,95,0.5); 
+    border-radius: 1rem;
+    position:absolute;
+    left: 25%;
+    top:20%;
+    transition: all 0.5s ease-in-out 0s;
+    display: flex;
+}
+
+.support-div:hover{
+    background-color: rgba(144,160,95,1);
+    box-shadow: 3px 3px 5px black;
+} 
+
+@media(max-width:1000px){
+    .support-div{
+       transform: scale(0.5) translateX(-22rem);
+    }
+}
+
+#my-photo , #my-description{
+    height: 100%;
+    width:50%;
+}
+
+#my-photo{
+    padding: 18% 0 0 14%;
+}
+
+#my-photo img{
+    transform: scale(1.5);
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#my-photo img:hover{
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.6);
+}
+
+#my-description p{
+position: absolute;
+top:6rem;
+line-height: 2.5rem;
+}
+
+#my-description h3{
+    position: absolute;
+    left:40%;
+    top:1rem;
+    word-spacing: 10px;
+    transform: scale(1.8);
+}
+
+#social-media{
+    width:43%;
+    height:20%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    opacity: 1;
+}
+
+.social-media-icon{
+    transform: translateY(2rem);
+}
+
+.social-media-icon i{
+    color: black;
+    opacity: 0.7;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.social-media-icon i:hover{
+    opacity: 1;
+    transform: scale(2);
+}
+
+@media(max-width:1000px){
+    #social-media{
+        opacity: 0;
+    }
+}
+
+ .nav-bar{
+    width:100%;
+    height:4rem;
+    background-color: #90A05F;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+.nav-bar .logo{
+    height: 100%;
+    width:3rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    transition: transform 0.3s ease-in-out 0s;
+    position:absolute;
+    left:0.8rem;
+}
+
+.logo img{
+   height: 80%;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-bar .logo img:hover{
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+.support-nav-btn{
+    height: fit-content;
+    width:fit-content;
+    background-color: rgba(128,128,128,0);
+    padding: 0.75rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in 0s;
+}
+
+.support-nav-btn:hover{
+    background-color: rgba(128,128,128,0.8);
+    transform: scale(1.1);
+}
+.support-nav-btn a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.85;
+    transition: all 0.5s ease-in-out 0s;
+    font-weight: 500;
+    font-size: large;
+}
+
+.support-nav-btn a:hover{
+ font-weight:bolder;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-anchors{
+    height:100%;
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+}
+
+#skill-div{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 2rem;
+    position: absolute;
+    top:55rem;
+    left:35rem;
+    background-image: url("./Images/Skill images.jpg");
+    background-size: cover;
+    background-color: #A6B37F;
+    background-blend-mode:multiply;
+    transition: all 0.35s ease-out 0s;
+}
+
+#skill-div:hover{
+    transform: scale(1.15);
+    box-shadow: 2px 2px 5px black;
+}
+
+/*responsiveness for hamburg*/
+
+.responsive-div{
+    opacity: 0;
+}
+
+@media(max-width:1000px){
+    .responsive-div{
+        opacity: 1;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+    
+    .responsive-div{
+        height: 100vh;
+        width:25vw;
+        position: fixed;
+        left: -300px;
+        top:0;
+        transition: all 0.3s ease-in 0s;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    .hamburg-btn{
+        width: fit-content;
+        height: fit-content;
+        transform: scale(1.6);
+        position: fixed;
+        left: 3rem;
+        top:3rem;
+    }
+    
+    .hamburg-btn i{
+        transition: all 0.4s ease-in-out 0s;
+    }
+    
+    .hamburg-btn i:hover{
+    transform: scale(1.7);
+    }
+    
+    .X-btn{
+      position: absolute;
+      left:85%;
+      bottom: 40%;
+    }
+    
+    .X-btn i{
+        font-size: larger;
+        transform: scale(1.3);
+        opacity: 0.7;
+        transition: all 0.4s ease-in-out 0s;
+    }
+    
+    .X-btn i:hover{
+        transform: scale(1.8);
+        opacity: 1;
+    }
+    
+    #logo-responsive{
+        width:100%;
+        height:9%;
+        background-color: #90A05F;
+        position: absolute;
+        top:0;
+    }
+    
+    #logo-icon{
+        width:23%;
+        height:85%;
+        padding: 0.55rem 0 0 1rem;
+    }
+    
+    
+    #logo-icon img{
+        height: 90%;
+        border-radius: 50%;;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    #logo-icon img:hover{
+        transform: scale(1.05);
+        box-shadow: 2px 2px 5px black;
+    }
+    
+    #responsive-nav-link{
+        background-color: #A0905F ;
+        width:100%;
+        height: 80%;
+        position: absolute;
+        top:9%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .res-sidebar{
+        height: fit-content;
+        width:fit-content;
+        background-color: rgba(128,128,128,0.2);
+        padding: 0.75rem;
+        border-radius: 3rem;
+        transition: all 0.3s ease-in 0s;
+    }
+    
+    .res-sidebar:hover{
+        background-color: rgba(128,128,128,1);
+        transform: scale(1.1);
+    }
+    
+    .res-sidebar a{
+        text-decoration: none;
+        color:black;
+        opacity: 0.85;
+        transition: all 0.5s ease-in-out 0s;
+        font-weight: 500;
+        font-size: large;
+    }
+    
+    .res-sidebar a:hover{
+     font-weight:bolder;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #res-social-media{
+        width: 100%;
+        height: 10%;
+        background-color: #90A05F;
+        position: absolute;
+        top: 89%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .res-social-media-icon{
+        width:fit-content;
+        height: fit-content;
+        transform: scale(1.5);
+    }
+    
+    .res-social-media-icon i{
+        transition: all 0.3s ease-in 0s;
+        color: black;
+        opacity: 0.7;
+    }
+    
+    .res-social-media-icon i:hover{
+        transform: scale(1.8);
+        opacity: 1;
+    }
+    
+    #check:checked~.responsive-div{
+        left:0;
+    }
+    
+    #check:checked~.hamburg-btn{
+        opacity: 0;
+    }
+    
+}
+
+/* responsiveness-ends for hamburg*/
+
+#contact-heading{
+    position: absolute;
+    top:80rem;
+    left: 45rem;
+}
+
+.contact-details{
+    width:40rem;
+    height: 10rem;
+    position: absolute;
+    left:39rem;
+    bottom: -44rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#phone-number{
+    font-size: large;
+    font-weight: 100;
+    position: absolute;
+    left:-5rem;
+}
+
+p{
+    font-size: large;
+    font-weight: bolder;
+}
+
+span{
+    display: inline;
+    color:rgba(0, 157, 255,1);
+}
+
+@media(max-width:1270px){
+    #contact-heading {
+        position: absolute;
+        left:20rem;
+    }
+
+     .contact-details{
+         position: absolute;
+            left:20rem;
+    }    
+        
+    #skill-div{
+        position: absolute;
+            left:16rem;
+    }
+}
